@@ -1,1 +1,8 @@
 # VIM Config files
+Run the following commands to map .vim and .vimrc to these files
+
+``` 
+ ln -s config_files/VIM/ .vim
+ ln -s config_files/VIM/.vimrc .vimrc
+``` 
+
