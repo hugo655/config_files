@@ -6,3 +6,9 @@ Run the following commands to map .vim and .vimrc to these files
  ln -s config_files/VIM/.vimrc .vimrc
 ``` 
 
+# TMUX Config files
+Run the following commands to map .tmux.conf to these files
+
+``` 
+ ln -s config_files/TMUX/tmux.conf .tmux.conf
+``` 
