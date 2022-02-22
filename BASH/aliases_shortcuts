@@ -1,0 +1,10 @@
+# Custom Shortcuts
+
+alias v='vim' 
+
+## GIT-Related shortcuts
+
+alias gl='git log --decorate --color --oneline --all --graph'
+alias gs='git status'
+alias gc='git commit'
+alias ga='git add'
