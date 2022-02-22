@@ -9,6 +9,6 @@ set incsearch
 hi Visual cterm=none ctermbg=darkgrey ctermfg=cyan
 
 
-
+set mouse=a
 set ts=4 sw=4
 set number
