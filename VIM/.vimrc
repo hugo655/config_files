@@ -10,5 +10,5 @@ hi Visual cterm=none ctermbg=darkgrey ctermfg=cyan
 
 
 set mouse=a
-set ts=4 sw=4
+set ts=2 sw=2
 set number
