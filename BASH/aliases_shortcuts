@@ -1,6 +1,6 @@
 # Custom Shortcuts
 
-alias v='vim' 
+alias v='vim -p ' 
 alias ll='ls -la' 
 alias SOURCE_BASHRC='source ~/.bashrc'
 

@@ -15,6 +15,7 @@ set hlsearch
 set mouse=a
 set ts=2 sw=2
 set number
+set tabpagemax=100
 
 "Setting ColorSchemes
 hi cursorColor cterm=None ctermbg=darkgrey ctermfg=cyan
