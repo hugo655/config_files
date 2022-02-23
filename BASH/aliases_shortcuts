@@ -1,6 +1,8 @@
 # Custom Shortcuts
 
 alias v='vim' 
+alias ll='ls -la' 
+alias LOAD_BASHRC='source ~/.bashrc'
 
 ## GIT-Related shortcuts
 
