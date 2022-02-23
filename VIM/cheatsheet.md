@@ -4,6 +4,8 @@ This is a collection of useful information about things I learned as I use VIM, 
 
 ## Using VIM'S Spell Checker
 
-[s | ]s  	:= Quirkier ways no navigated between misspelled words
+[s or ]s  	:= Quirkier ways no navigated between misspelled words
 
 z= 				:= Opens suggestions to misspelled words 
+
+zG 				:= Adds word to dictionary
