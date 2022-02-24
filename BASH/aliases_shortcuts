@@ -13,6 +13,7 @@ alias ga='git add'
 
 # Custom Environment Variables
 export VIM_CHEATSHEET="/home/${USER}/config_files/VIM/cheatsheet.md"
+export GIT_CHEATSHEET="/home/${USER}/config_files/CHEATSHEETS/git_cheatsheet.md"
 export  ALIASES="/home/${USER}/.aliases_shortcuts"
 export  CONFIG_FILES="/home/${USER}/config_files"
 
