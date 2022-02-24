@@ -15,3 +15,7 @@ alias ga='git add'
 export VIM_CHEATSHEET="/home/${USER}/config_files/VIM/cheatsheet.md"
 export  ALIASES="/home/${USER}/.aliases_shortcuts"
 export  CONFIG_FILES="/home/${USER}/config_files"
+
+## Variables for WLS
+export DESKTOP="/mnt/c/Users/hugo.medeiros/Desktop/"
+export ONEDRIVE="/mnt/c/Users/hugo.medeiros/OneDrive/Academico"
