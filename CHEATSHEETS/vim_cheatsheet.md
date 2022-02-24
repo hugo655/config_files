@@ -4,11 +4,11 @@ This is a collection of useful information about things I learned as I use VIM, 
 
 ## Using VIM'S Spell Checker
 ```
-[s or ]s  	:= Quirkier ways no navigated between misspelled words
+[s or ]s	:= Quirkier ways no navigated between misspelled words
 
-z= 				:= Opens suggestions to misspelled words 
+z= := Opens suggestions to misspelled words 
 
-zG 				:= Adds word to dictionary
+zG := Adds word to dictionary
 ```
 
 ## Substitute Command 
@@ -18,7 +18,7 @@ zG 				:= Adds word to dictionary
 
 %s := The % sign replaces every line on the document
 
-g		:= This flag makes sure it searches for every occurrence in a given line
+g	:= This flag makes sure it searches for every occurrence in a given line
 
-c 	:= This flag prompts a confirm before replacing the REGEX Expression 
+c	:= This flag prompts a confirm before replacing the REGEX Expression 
 ```
