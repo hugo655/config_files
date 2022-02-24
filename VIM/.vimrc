@@ -4,6 +4,7 @@
 autocmd BufNewFile,BufRead *.v,*.sv,*.svh set syntax=verilog_systemverilog
 autocmd BufNewFile,BufRead *.md set filetype=markdown
 
+colorscheme synthwave
 " The following two lines handles the cursor - not useful in WSL
 "let &t_SI = "\e[6 q"
 "let &t_EI = "\e[1 q"
