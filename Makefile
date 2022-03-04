@@ -27,6 +27,12 @@ config_VIM:
 config_BASH:  
 	@printf "\n#### CONFIGURING BASH ####\n\n"
 	@ cd .. ;\
+	if [  -f  ".inputrc" ]; then \
+	 printf '[INFO] Moving ~/inputrc to ~/inputrc.bk \n' ;\
+	 mv .inputrc .inputrc.bk ;\
+        fi ;\
+	printf '[INFO] Creating a link from .inputrc -> config_files/BASH/inputrc' ;\
+	ln -s config_files/BASH/inputrc .inputrc ;\
   printf "[INFO] Appending 'source ~/.aliases_shortcuts' to .bashrc \n" ;\
 	echo "source ~/.aliases_shortcuts" >> .bashrc ;\
 	printf '[INFO] Creating a link from .aliases_shortcuts -> config_files/BASH/aliases_shortcuts' ;\
