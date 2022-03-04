@@ -24,3 +24,6 @@ hi SpellBad cterm=underline ctermfg=red
 hi Search ctermbg=yellow
 hi Search ctermfg=Red
 hi Visual cterm=none ctermbg=darkgrey ctermfg=cyan
+
+"Mappings
+noremap! <C-h> <C-w>
