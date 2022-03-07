@@ -1,5 +1,6 @@
 # Custom Shortcuts
 alias v='vim -p ' 
+alias tm='tmux a ' 
 alias ll='ls -la' 
 alias SOURCE_BASHRC='source ~/.bashrc'
 
