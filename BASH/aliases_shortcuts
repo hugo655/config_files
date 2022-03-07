@@ -1,15 +1,16 @@
 # Custom Shortcuts
-
 alias v='vim -p ' 
 alias ll='ls -la' 
 alias SOURCE_BASHRC='source ~/.bashrc'
 
 # GIT-Related shortcuts
-
 alias gl='git log --decorate --color --oneline --all --graph'
 alias gs='git status'
 alias gc='git commit'
 alias ga='git add'
+
+# Work-Related shortcuts
+alias 130.200_SSH='ssh hugo.medeiros@192.168.130.200'
 
 # Custom Environment Variables
 export VIM_CHEATSHEET="/home/${USER}/config_files/VIM/cheatsheet.md"
