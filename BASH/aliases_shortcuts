@@ -4,6 +4,7 @@ alias ll='ls -la'
 alias SOURCE_BASHRC='source ~/.bashrc'
 
 # GIT-Related shortcuts
+alias gp='git pull'
 alias gl='git log --decorate --color --oneline --all --graph'
 alias gs='git status'
 alias gc='git commit'
