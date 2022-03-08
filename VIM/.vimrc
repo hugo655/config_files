@@ -17,6 +17,7 @@ set mouse=a
 set ts=2 sw=2
 set number
 set tabpagemax=100
+set nowrap
 
 "Setting ColorSchemes
 hi cursorColor cterm=None ctermbg=darkgrey ctermfg=cyan
@@ -27,3 +28,5 @@ hi Visual cterm=none ctermbg=darkgrey ctermfg=cyan
 
 "Mappings
 noremap! <C-h> <C-w>
+inoremap <F3> <C-O>:w<CR>
+noremap <F3> <C-O>:w<CR>
