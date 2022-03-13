@@ -31,10 +31,18 @@ config_BASH:
 	 printf '[INFO] Moving ~/inputrc to ~/inputrc.bk \n' ;\
 	 mv .inputrc .inputrc.bk ;\
         fi ;\
+	if [ ! -f  ".user_local_variables"  ]; then \
+	 printf '[INFO] Creating ~\.user_local_variables \n' ;\
+	 touch .user_local_variables ;\
+        fi ;\
 	printf '[INFO] Creating a link from .inputrc -> config_files/BASH/inputrc' ;\
 	ln -s config_files/BASH/inputrc .inputrc ;\
   printf "[INFO] Appending 'source ~/.aliases_shortcuts' to .bashrc \n" ;\
 	echo "source ~/.aliases_shortcuts" >> .bashrc ;\
+	if [  -f  ".aliases_shortcuts" ]; then \
+	 printf '[INFO] Moving ~/aliases_shortcuts to ~/aliases_shortcuts.bk \n' ;\
+	 mv .aliases_shortcuts .aliases_shortcuts.bk ;\
+        fi ;\
 	printf '[INFO] Creating a link from .aliases_shortcuts -> config_files/BASH/aliases_shortcuts' ;\
 	ln -s config_files/BASH/aliases_shortcuts .aliases_shortcuts;\
 	echo "Run source ~/.bashrc "

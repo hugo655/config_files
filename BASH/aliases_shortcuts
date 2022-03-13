@@ -20,7 +20,7 @@ export GIT_CHEATSHEET="/home/${USER}/config_files/CHEATSHEETS/git_cheatsheet.md"
 export MAKE_CHEATSHEET="/home/${USER}/config_files/CHEATSHEETS/makefile_cheatsheet.md"
 export  ALIASES="/home/${USER}/.aliases_shortcuts"
 export  CONFIG_FILES="/home/${USER}/config_files"
+export  WLS_VARIABLES="/home/${USER}/.wls_variables"
 
 ## Variables for WLS
-export DESKTOP="/mnt/c/Users/hugo.medeiros/Desktop/"
-export ONEDRIVE="/mnt/c/Users/hugo.medeiros/OneDrive/Academico"
+source ~/.user_local_variables
