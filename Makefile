@@ -11,13 +11,16 @@ config_VIM:
 	@ cd .. ;\
 	if [  -d  ".vim" ]; then \
 	 printf '[INFO] Moving ~/.vim to ~/.vim.bk \n' ;\
-	 mv .vim .vim.bk ;\
+	 cat .vim > > .vim.bk ;\
+   rm .vim ;\q
+	 rm .vim ;\
         fi ;\
 	printf '[INFO] Creating a link from .vim -> config_files/VIM\n' ;\
 	ln -s config_files/VIM .vim ;\
 	if [  -f  ".vimrc" ]; then \
 	 printf '[INFO] Moving ~/.vimrc to ~/.vimrc.bk \n' ;\
-	 mv .vimrc .vimrc.bk ;\
+	 cat .vimrc > .vimrc.bk ;\
+		rm .vimrc ;\
         fi ;\
 	printf '[INFO] Creating a link from .vimrc -> config_files/VIM/.vimrc\n' ;\
 	ln -s config_files/VIM/.vimrc .vimrc ;\
@@ -29,7 +32,8 @@ config_BASH:
 	@ cd .. ;\
 	if [  -f  ".inputrc" ]; then \
 	 printf '[INFO] Moving ~/inputrc to ~/inputrc.bk \n' ;\
-	 mv .inputrc .inputrc.bk ;\
+	 cat .inputrc > .inputrc.bk ;\
+   rm .inputrc ;\
         fi ;\
 	if [ ! -f  ".user_local_variables"  ]; then \
 	 printf '[INFO] Creating ~\.user_local_variables \n' ;\
@@ -41,7 +45,8 @@ config_BASH:
 	echo "source ~/.aliases_shortcuts" >> .bashrc ;\
 	if [  -f  ".aliases_shortcuts" ]; then \
 	 printf '[INFO] Moving ~/aliases_shortcuts to ~/aliases_shortcuts.bk \n' ;\
-	 mv .aliases_shortcuts .aliases_shortcuts.bk ;\
+	 cat .aliases_shortcuts > .aliases_shortcuts.bk ;\
+   rm .aliases_shortcuts ;\
         fi ;\
 	printf '[INFO] Creating a link from .aliases_shortcuts -> config_files/BASH/aliases_shortcuts' ;\
 	ln -s config_files/BASH/aliases_shortcuts .aliases_shortcuts;\
@@ -52,7 +57,8 @@ config_TMUX:
 	@ cd .. ;\
 	if [  -f  ".tmux.conf" ]; then \
 	 printf '[INFO] Moving ~/tmux.conf to ~/tmux.conf.bk \n' ;\
-	 mv .tmux.conf .tmux.conf.bk ;\
+	 cat .tmux> .conf .tmux.conf.bk ;\
+   rm .tmux ;\
         fi ;\
 	printf '[INFO] Creating a link from .tmux.conf -> config_files/TMUX/tmux.confn' ;\
 	ln -s config_files/TMUX/tmux.conf .tmux.conf ;\
