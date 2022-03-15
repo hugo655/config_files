@@ -11,8 +11,7 @@ config_VIM:
 	@ cd .. ;\
 	if [  -d  ".vim" ]; then \
 	 printf '[INFO] Moving ~/.vim to ~/.vim.bk \n' ;\
-	 cat .vim > .vim.bk ;\
-	 rm .vim ;\
+	 mv .vim  .vim.bk ;\
         fi ;\
 	printf '[INFO] Creating a link from .vim -> config_files/VIM\n' ;\
 	ln -s config_files/VIM .vim ;\
@@ -56,8 +55,8 @@ config_TMUX:
 	@ cd .. ;\
 	if [  -f  ".tmux.conf" ]; then \
 	 printf '[INFO] Moving ~/tmux.conf to ~/tmux.conf.bk \n' ;\
-	 cat .tmux> .conf .tmux.conf.bk ;\
-   rm .tmux ;\
+	 cat .tmux.conf >  .tmux.conf.bk ;\
+   rm .tmux.conf ;\
         fi ;\
 	printf '[INFO] Creating a link from .tmux.conf -> config_files/TMUX/tmux.confn' ;\
 	ln -s config_files/TMUX/tmux.conf .tmux.conf ;\
