@@ -12,7 +12,6 @@ config_VIM:
 	if [  -d  ".vim" ]; then \
 	 printf '[INFO] Moving ~/.vim to ~/.vim.bk \n' ;\
 	 cat .vim > .vim.bk ;\
-   rm .vim ;\q
 	 rm .vim ;\
         fi ;\
 	printf '[INFO] Creating a link from .vim -> config_files/VIM\n' ;\
