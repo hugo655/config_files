@@ -8,7 +8,18 @@ This file considers that my custom `.tmux.conf` file is being used.
 
 Ctrl + Space := Prefix
 
-## VIM MODE
+#Basics
+-> Spliting Panes and navigating
+<Prefix> c := To create a new tab
+<Prefix> 0/1/2/3/... := To navigate between tabs
+<Prefix> | := To split current window in vertical
+<Prefix> _ := To split current window in horizontal
+<Prefix> h/j/k/l/... := To navigate between panes
+
+-> Enabling mouse selection
+SHIFT + <mouse selection> := To temporarily disable tmux's selection engine
+
+#VIM MODE
 <Prefix> [  := To enter VIM Mode
 
 -> Copying
