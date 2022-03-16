@@ -24,4 +24,5 @@ export  CONFIG_FILES="/home/${USER}/config_files"
 export  WLS_VARIABLES="/home/${USER}/.wls_variables"
 
 ## Variables for WLS
+alias OPEN_CURRENT_DIR_WIN_EXPLORER='cmd.exe /c start .'
 source ~/.user_local_variables
