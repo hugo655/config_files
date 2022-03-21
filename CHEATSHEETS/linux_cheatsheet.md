@@ -6,7 +6,7 @@ A collection of useful commands.
 
 | Command | Note |
 | -----   | ----- |
-| `cat /etc/passwd | grep home `  | List all users and filters those who have `/home/` dir
+| `cat /etc/passwd | grep home`  | List all users and filters those who have `/home/` dir
 | `sudo adduser`                  | Adds new user
 | `sudo passwd <user>`            | Changes `<user>` password
 | `sudo userdel r <user>`         |  Deletes `<user>` from the computer
