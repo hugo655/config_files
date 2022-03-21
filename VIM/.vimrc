@@ -14,7 +14,7 @@ set spell
 set incsearch
 set hlsearch
 set mouse=a
-set ts=2 sw=2
+set ts=2 sw=2 expandtab
 set number
 set tabpagemax=100
 set nowrap
