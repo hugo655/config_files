@@ -4,3 +4,10 @@ export ONEDRIVE="/mnt/c/Users/hugo.medeiros/OneDrive/Academico"
 
 #SSH aliases 
 alias MICRO_ELETRONICA_SSH='ssh hugo.medeiros@10.75.211.9'
+
+#List useful IPs for local servers
+alias IP_LIST='printf "ip Address|user_name|note
+192.168.130.200|hugo.medeiros|Embeddedlab
+10.75.13.20|hugo.medeiros|13.20
+10.75.13.30|hugo.medeiros|13.30
+10.75.211.9|hugo.medeiros|microeletronica-1\n"'
