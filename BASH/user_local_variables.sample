@@ -1,0 +1,6 @@
+#Local Variables
+export DESKTOP="/mnt/c/Users/hugo.medeiros/Desktop/"
+export ONEDRIVE="/mnt/c/Users/hugo.medeiros/OneDrive/Academico"
+
+#SSH aliases 
+alias MICRO_ELETRONICA_SSH='ssh hugo.medeiros@10.75.211.9'
