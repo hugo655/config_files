@@ -24,6 +24,13 @@ export  ALIASES="/home/${USER}/.aliases_shortcuts"
 export  CONFIG_FILES="/home/${USER}/config_files"
 export  WLS_VARIABLES="/home/${USER}/.wls_variables"
 
+# Blog-Related Stuff
+# Note: At some point I installed this Ruby/Gem thing
+#don't know what it is, but It makes easier for blogging
+# sudo apt-get install ruby-full build-essential zlib1g-dev
+export GEM_HOME="$HOME/gems"
+export PATH="$HOME/gems/bin:$PATH"
+
 ## Variables for WLS
 alias OPEN_CURRENT_DIR_WIN_EXPLORER='cmd.exe /c start .'
 source ~/.user_local_variables
