@@ -14,3 +14,13 @@ A collection of useful commands.
 | `sudo usermod -a -G <group1>, <group2>,...  <user>`  | Adds `<user>` to `<groups>` if `-a` not added, all groups are lost
 | `sudo gpasswd d <user> <group>`   | Removes `<user>` from a group
 
+## Basic Bash Processing
+
+**Running a for loop over files**
+
+```
+$: for file in *;
+do
+ echo This is $file;
+done
+```
