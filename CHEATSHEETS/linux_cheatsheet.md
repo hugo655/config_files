@@ -16,6 +16,21 @@ A collection of useful commands.
 
 ## Basic Bash Processing
 
+** Storing variables from a command **
+
+```
+#!/bin/bash
+
+vim_root_folder=$(which vim)
+
+post_processing=$(echo $vim_root_folder | awk -F "vim" '{print $1}')
+
+echo The full path is: $vim_root_folder
+
+echo The root folder is: $post_processing
+```
+
+
 **Running a for loop over files**
 
 ```
