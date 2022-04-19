@@ -2,6 +2,10 @@
 
 This is a collection of useful information about things I learned as I use VIM, yet I think I might forget/search again. 
 
+## Editing VIMRC
+
+`:e $MYVIMRC` is an easy way to edit the current user's vimrc.
+
 ## Spliting panes and Zomming
 ```
 :split
