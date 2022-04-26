@@ -13,7 +13,7 @@ This is a collection of useful information about things I learned as I use VIM, 
 |`:split` or `:vsplit`      | Splits the current pane into horizontal or vertical
 |`ctrl` `w` `h`/`j`/`k`/`l` | Navigate around panes
 | `ctrl` `w` `=`            | Adjust all panes to equal size
-| `ctrl` `w` `|`            | Fill pane completelly vertically
+| `ctrl` `w` `\|`            | Fill pane completelly vertically
 | `ctrl` `w` `_`            | Fill pane completelly horizontally
 | `ctrl` `w` `<`/`>`        | Adjust panes horizontally
 | `ctrl` `w` `+`/`-`        | Adjust panes vertically
