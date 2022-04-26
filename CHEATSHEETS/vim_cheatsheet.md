@@ -7,29 +7,26 @@ This is a collection of useful information about things I learned as I use VIM, 
 `:e $MYVIMRC` is an easy way to edit the current user's vimrc.
 
 ## Spliting panes and Zomming
-```
-:split
-:vsplit
 
-Ctrl + w j,k,l,h := Move around panes
-Ctrl + w =  := Adjust all panes to equal size
-Ctrl + w |  := Fill pane completelly vertically
-Ctrl + w _  := Fill pane completelly horizontally
-Ctrl + w <,>  := Adjust panes horizontally
-Ctrl + w +,-  := Adjust panes vertically
-
-
-```
+| Command                   |  Note
+|--------------------------------------------------------------------------------
+|`:split` or `:vsplit`      | Splits the current pane into horizontal or vertical
+|`ctrl` `w` `h`/`j`/`k`/`l` | Navigate around panes
+| `ctrl` `w` `=`            | Adjust all panes to equal size
+| `ctrl` `w` `|`            | Fill pane completelly vertically
+| `ctrl` `w` `_`            | Fill pane completelly horizontally
+| `ctrl` `w` `<`/`>`        | Adjust panes horizontally
+| `ctrl` `w` `+`/`-`        | Adjust panes vertically
 
 
 ## Using VIM'S Spell Checker
-```
-[s or ]s	:= Quirkier ways no navigated between misspelled words
+| Command                 |  Note
+|-------------------------|----------------------------------------------------
+|`[s` or `]s`	            | Quirkier ways no navigated between misspelled words
+|`z=`                     | Opens suggestions to misspelled words
+|`zG`        	            | Adds word to dictionary
+|`:set spell spelllang=pt`| Changes the spelling language
 
-z= := Opens suggestions to misspelled words 
-
-zG := Adds word to dictionary
-```
 
 ## Substitute Command 
 

@@ -19,6 +19,7 @@ set number
 set tabpagemax=100
 set nowrap
 set ts=2 sw=2 expandtab
+set fileencodings=ucs-bom,utf8,latin1
 
 "Defining filetypes as the code opens 
 autocmd BufNewFile,BufRead *.v,*.sv,*.svh set syntax=verilog_systemverilog
