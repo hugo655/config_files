@@ -14,6 +14,7 @@ alias ga='git add'
 # Work-Related shortcuts
 alias 130.200_SSH='ssh hugo.medeiros@192.168.130.200'
 
+export LANG=en_US.UTF-8
 # Custom Environment Variables
 export VIM_CHEATSHEET="/home/${USER}/config_files/VIM/cheatsheet.md"
 export GIT_CHEATSHEET="/home/${USER}/config_files/CHEATSHEETS/git_cheatsheet.md"
