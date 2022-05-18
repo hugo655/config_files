@@ -3,6 +3,9 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " THE FOLLOWING LINES ARE JUST FOR INSTALLING VUNDLE PACKAGE MANANGER
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" If you are running this for the first time don't forget to run 
+" git clone https://github.com/VundleVim/Vundle.vim.git  
+" to populate the folder .vim/bundle/Vundle.vim
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
