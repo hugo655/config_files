@@ -1,48 +1,36 @@
 "Author: Hugo Gayoso
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" THE FOLLOWING LINES ARE JUST FOR INSTALLING VUNDLE PACKAGE MANANGER
+" THE FOLLOWING LINES ARE JUST FOR INSTALLING VIM PLUG
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" If you are running this for the first time don't forget to run 
-" git clone https://github.com/VundleVim/Vundle.vim.git  
-" to populate the folder .vim/bundle/Vundle.vim
+call plug#begin()
+" The default plugin directory will be as follows:
+" To install and read documentation, look for: https://github.com/junegunn/vim-plug
+" You can specify a custom plugin directory by passing it as the argument
+"   - e.g. `call plug#begin('~/.vim/plugged')`
+"   - Avoid using standard Vim directory names like 'plugin'
 
-set nocompatible              " be iMproved, required
-filetype off                  " required
+" Make sure you use single quotes
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+" Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
+Plug 'junegunn/vim-easy-align'
+Plug 'mechatroner/rainbow_csv'
+" Initialize plugin system
+call plug#end()
 
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'mechatroner/rainbow_csv'
-Plugin 'tpope/vim-fugitive'
-Plugin 'git://git.wincent.com/command-t.git'
-Plugin 'file:///home/gmarik/path/to/plugin'
-Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-call vundle#end()            " required
-filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-"
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
+"""""""""""""""""""""""""""""""""""""
+""END OF VPLUG PACKAGE MANAGER SETUP
+"""""""""""""""""""""""""""""""""""""
 
-""""""""""""""""""""""""""""""""""""
-"END OF VUNDLE PACKAGE MANAGER SETUP
-""""""""""""""""""""""""""""""""""""
 
 
 "Mappings
 noremap! <C-h> <C-w>
 inoremap <F3> <C-O>:w<CR>
 noremap <F3> <C-O>:w<CR>
+
+xmap ga <Plug>(EasyAlign)
+nmap ga <Plug>(EasyAlign)
 
 "Maps J to Highlight current word with no line jump
 map J #*
@@ -75,3 +63,41 @@ hi Visual cterm=none ctermbg=darkgrey ctermfg=cyan
 " The following two lines handles the cursor - not useful in WSL
 "let &t_SI = "\e[6 q"
 "let &t_EI = "\e[1 q"
+"
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"" THE FOLLOWING LINES ARE JUST FOR INSTALLING VUNDLE PACKAGE MANANGER
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"" If you are running this for the first time don't forget to run 
+"" git clone https://github.com/VundleVim/Vundle.vim.git  
+"" to populate the folder .vim/bundle/Vundle.vim
+"
+"set nocompatible              " be iMproved, required
+"filetype off                  " required
+"
+"" set the runtime path to include Vundle and initialize
+"set rtp+=~/.vim/bundle/Vundle.vim
+"call vundle#begin()
+"
+"Plugin 'VundleVim/Vundle.vim'
+"Plugin 'mechatroner/rainbow_csv'
+"Plugin 'tpope/vim-fugitive'
+"Plugin 'git://git.wincent.com/command-t.git'
+"Plugin 'file:///home/gmarik/path/to/plugin'
+"Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+"call vundle#end()            " required
+"filetype plugin indent on    " required
+"" To ignore plugin indent changes, instead use:
+""filetype plugin on
+""
+"" Brief help
+"" :PluginList       - lists configured plugins
+"" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+"" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+"" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+""
+"" see :h vundle for more details or wiki for FAQ
+"" Put your non-Plugin stuff after this line
+"
+"""""""""""""""""""""""""""""""""""""
+""END OF VUNDLE PACKAGE MANAGER SETUP
+"""""""""""""""""""""""""""""""""""""
