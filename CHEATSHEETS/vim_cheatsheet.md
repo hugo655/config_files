@@ -6,6 +6,24 @@ This is a collection of useful information about things I learned as I use VIM, 
 
 `:e $MYVIMRC` is an easy way to edit the current user's vimrc.
 
+## Folding lines of code -- These commands also work with vimdiff
+|Command in normal mode|Comment
+|----------------------|------------------------------------------------
+|`zm`                  | increases the foldlevel by one.
+|`zM`                  | closes all open folds.
+|`zr`                  | decreases the foldlevel by one.
+|`zR`                  | decreases the foldlevel to zero — all folds will be open.
+|`zf#j`                | creates a fold from the cursor down # lines.
+|`zf/`                 | string creates a fold from the cursor to string.
+|`zj`                  | moves the cursor to the next fold.
+|`zk`                  | moves the cursor to the previous fold.
+|`zo`                  | opens a fold at the cursor.
+|`zO`                  | opens all folds at the cursor.
+|`zd`                  | deletes the fold at the cursor.
+|`zE`                  | deletes all folds.
+|`[z`                  | move to start of open fold.
+|`]z`                  | move to end of open fold.
+
 ## Spliting panes and Zomming
 
 | Command                   |  Note

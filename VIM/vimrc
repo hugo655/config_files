@@ -1,0 +1,94 @@
+"Author: Hugo Gayoso
+
+" Vimplug instalation ________________________________________
+call plug#begin()
+Plug 'junegunn/vim-easy-align'         " Useful for alighting characters
+Plug 'mechatroner/rainbow_csv'         " Highlights csv files
+Plug 'sainnhe/sonokai'                 " Color Theme
+Plug 'vim-airline/vim-airline'         " Normal mode bar (navigation bar)
+Plug 'vim-airline/vim-airline-themes'  " Themes for Navigation bar
+Plug 'ryanoasis/vim-devicons'          " Icons in tabs
+Plug 'sheerun/vim-polyglot'            " Syntax highlight for a lot of languages
+Plug 'preservim/nerdtree'              " Navigation Sidebar
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight' " Customize Navigation sidebar
+Plug 'Xuyuanp/nerdtree-git-plugin'     " Add git informations in navigation sidebar
+Plug 'vhda/verilog_systemverilog.vim'  " Additional syntax for SV/Verilog
+Plug 'honza/vim-snippets'              " Add snippets to vim
+Plug 'jiangmiao/auto-pairs'            " Open and close brackes
+call plug#end()
+" note: run `:PlugInstall` when running first time
+"_____________________________________________________________
+
+
+" Special Configurations for Plugins _________________________
+let g:airline#extensions#tabline#enabled = 1 " Airline configuration
+let g:airline_powerline_fonts = 1            " Airline configuration
+nmap <C-a> :NERDTreeToggle<CR>               " Open Sidebar with ctrl A
+xmap ga <Plug>(EasyAlign)
+nmap ga <Plug>(EasyAlign)
+"_____________________________________________________________
+
+
+
+" Global Sets ________________________________________________
+set spell                             " Enable spell checker
+set incsearch                         " Incremental Search
+set hlsearch                          " highlights as searchrs
+set number                            " Enables linenumbers
+set tabpagemax=100                    " Enables openning up to 100 files at once
+set nowrap                            " Disables word-wrap (jump to the next line at line end)
+set ts=2 sw=2 expandtab               " Configures tabs
+set fileencodings=ucs-bom,utf8,latin1 " Set file encoding
+syntax on                             " Enable syntax highlight
+set autoindent                        " Automatically inserts one extra level of indentation in some cases
+set ignorecase                        " Ingore case in search
+set smartcase                         " Consider case if there is a upper case character
+set scrolloff=8                       " Minimum number of lines to keep above and below the cursor
+set cmdheight=3                       " Give more space for displaying messages
+set updatetime=100                    " Time in miliseconds to consider the changes
+set nobackup                          " No backup files no swp
+set nowritebackup                     " No backup files no swp
+set splitright                        " Create the vertical splits to the right
+set splitbelow                        " Create the horizontal splits below
+set autoread                          " Update vim after file update from outside
+set wildmenu                          " Navigation bar in CMD menu
+set showcmd                           " Navigation bar in CMD menu
+filetype on                           " Detect and set the filetype option and trigger the FileType Event
+filetype plugin on                    " Load the plugin file for the file type, if any
+filetype indent on                    " Load the indent file for the file type, if any
+"set nomodeline
+"set relativenumber                   " Side numbers on the number bar
+"set mouse=a                          " Enables mouse clicks 
+"set hidden                           " Hides the current buffer when a new file is openned
+"_____________________________________________________________
+
+" Special configurations for some file formats _______________
+autocmd BufNewFile,BufRead *.v,*.sv,*.svh set syntax=verilog_systemverilog
+autocmd BufNewFile,BufRead *.md set filetype=markdown
+autocmd BufNewFile,BufRead Makefile setlocal noexpandtab
+"_____________________________________________________________
+
+
+" Mapping ____________________________________________________
+noremap! <C-h> <C-w>
+inoremap <F3> <C-O>:w<CR>   " Maps save to F3 button
+noremap <F3> <C-O>:w<CR>    " Maps save to F3 button
+map J #*                    " Highlights the current word
+nnoremap <S-right> gt       " Navegate between panes
+nnoremap <S-left> gT        " Navegate between panes
+nnoremap <S-L> gt           " Navegate between panes
+nnoremap <S-H> gT           " Navegate between panes
+"_____________________________________________________________
+
+
+" Colors _____________________________________________________
+set term=xterm
+set t_Co=256
+colorscheme monokai
+"hi cursorColor cterm=None ctermbg=darkgrey ctermfg=cyan
+"hi SpellBad cterm=underline ctermfg=red
+"hi Search ctermbg=yellow
+"hi Search ctermfg=Red
+"hi Visual cterm=none ctermbg=darkgrey ctermfg=cyan
+"_____________________________________________________________
+
