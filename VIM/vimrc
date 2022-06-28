@@ -9,9 +9,9 @@ Plug 'vim-airline/vim-airline'         " Normal mode bar (navigation bar)
 Plug 'vim-airline/vim-airline-themes'  " Themes for Navigation bar
 Plug 'ryanoasis/vim-devicons'          " Icons in tabs
 Plug 'sheerun/vim-polyglot'            " Syntax highlight for a lot of languages
-Plug 'preservim/nerdtree'              " Navigation Sidebar
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight' " Customize Navigation sidebar
-Plug 'Xuyuanp/nerdtree-git-plugin'     " Add git informations in navigation sidebar
+"Plug 'preservim/nerdtree'              " Navigation Sidebar
+"Plug 'tiagofumo/vim-nerdtree-syntax-highlight' " Customize Navigation sidebar
+"Plug 'Xuyuanp/nerdtree-git-plugin'     " Add git informations in navigation sidebar
 Plug 'vhda/verilog_systemverilog.vim'  " Additional syntax for SV/Verilog
 Plug 'honza/vim-snippets'              " Add snippets to vim
 Plug 'jiangmiao/auto-pairs'            " Open and close brackes
@@ -21,8 +21,8 @@ call plug#end()
 
 
 " Special Configurations for Plugins _________________________
-let g:airline#extensions#tabline#enabled = 1 " Airline configuration
-let g:airline_powerline_fonts = 1            " Airline configuration
+"let g:airline#extensions#tabline#enabled = 1 " Airline configuration
+"let g:airline_powerline_fonts = 1            " Airline configuration
 nmap <C-a> :NERDTreeToggle<CR>               " Open Sidebar with ctrl A
 xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
@@ -44,7 +44,7 @@ set autoindent                        " Automatically inserts one extra level of
 set ignorecase                        " Ingore case in search
 set smartcase                         " Consider case if there is a upper case character
 set scrolloff=8                       " Minimum number of lines to keep above and below the cursor
-set cmdheight=3                       " Give more space for displaying messages
+set cmdheight=1                       " Give more space for displaying messages
 set updatetime=100                    " Time in miliseconds to consider the changes
 set nobackup                          " No backup files no swp
 set nowritebackup                     " No backup files no swp
@@ -86,7 +86,7 @@ set term=xterm
 set t_Co=256
 colorscheme monokai
 "hi cursorColor cterm=None ctermbg=darkgrey ctermfg=cyan
-"hi SpellBad cterm=underline ctermfg=red
+hi SpellBad ctermfg=black  ctermbg=red 
 "hi Search ctermbg=yellow
 "hi Search ctermfg=Red
 "hi Visual cterm=none ctermbg=darkgrey ctermfg=cyan

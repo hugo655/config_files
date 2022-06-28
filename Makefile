@@ -20,8 +20,8 @@ config_VIM:
 	 cat .vimrc > .vimrc.bk ;\
 		rm .vimrc ;\
         fi ;\
-	printf '[INFO] Creating a link from .vimrc -> config_files/VIM/.vimrc\n' ;\
-	ln -s config_files/VIM/.vimrc .vimrc ;\
+	printf '[INFO] Creating a link from .vimrc -> config_files/VIM/vimrc\n' ;\
+	ln -s config_files/VIM/vimrc .vimrc ;\
 	echo "end config"
 
 
